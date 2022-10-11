@@ -1,0 +1,313 @@
+<html>
+    <head>
+        <title>Form Karyawan</title>
+        <style>
+            textarea {
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+    <body>
+    <h1 style="font-size: 30; text-align: center;">FORM INPUT DATA KARYAWAN</h1>
+    <form name="form-karyawan" method="post" action="next.php">
+    <fieldset>
+    <legend style="font-size: 20;">
+        Data Karyawan
+    </legend>
+    <table border=0 style="list-style-type: none; white-space: nowrap;">
+    <ul>
+       <tr>
+        <td>
+        <li>
+            <label>
+                NIP Karyawan  
+            </td>
+            <td>
+                &emsp;
+                <input type="text" size="25">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Nama Karyawan
+            </td>
+            <td>
+                &emsp;
+                <input type="text" name="name" size="50">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Alamat Karyawan
+            </td>
+            <td>
+                &emsp;
+                <textarea style="width: 60em; resize: none;" name="Alamat Karyawan" id="form-alamat" rows="5"></textarea>
+            </td>
+            </label>
+        </li>
+       </tr>
+       <tr>
+        <td>
+        <li>
+            <label>
+                No Telpon Karyawan
+            </td>
+            <td>
+                &emsp;
+                <input type="numeric" style="width: 4em;" maxlength="4">
+                <label>-</label>
+                <input type="numeric" style="width: 15em;">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Jenis Kelamin Karyawan
+            </td>
+            <td>
+                &emsp;
+                <select name="jenis-kelamin" id="form-JK" style="width: 6em;">
+                    <option disabled selected value></option>
+                    <option>Pria</option>
+                    <option>Wanita</option>
+                </select>
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Agama Karyawan
+            </td>
+            <td>
+                &emsp;
+                <select name="agama" id="form-agama" style="width: 6em;">
+                    <option disabled selected value></option>
+                    <option>Islam</option>
+                    <option>Kristen</option>
+                    <option>Hindu</option>
+                    <option>Konghucu</option>
+                    <option>Katolik</option>
+                    <option>Buddha</option>
+                </select>
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Status Karyawan
+            </td>
+            <td>
+                <li>
+                    &emsp;
+                    <label><input type="radio" name="status" value="Kawin">Kawin</label>
+                </li>
+                <li>
+                    &emsp;
+                    <label><input type="radio" name="status" value="Belum Kawin">Belum Kawin</label>
+                </li>
+                </li>
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Jabatan Karyawan
+            </td>
+            <td>
+                &emsp;
+                <select name="jabatan" id="form-jabatan" style="width: 6em;">
+                    <option disabled selected value></option>
+                    <option>Admistrasi</option>
+                    <option>Manajer</option>
+                    <option>Marketing</option>
+                    <option>HRD</option>
+                    <option>Programmer</option>
+                </select>
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Tanggal Masuk
+            </td>
+            <td>
+                &emsp;
+                <input type="numeric" style="width: 4em;" maxlength="2">
+                <label>-</label>
+                <input type="numeric" style="width: 4em;" maxlength="2">
+                <label>-</label>
+                <input type="numeric" style="width: 8em;" maxlength="4">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Jenis Identitas<br>yang digunakan
+            </td>
+            <td>
+                &emsp;
+                <select name="jenis-identitas" id="form-identitas" style="width: 6em;">
+                    <option disabled selected value></option>
+                    <option>KTP</option>
+                    <option>SIM</option>
+                    <option>PASPOR</option>
+                </select>
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Nomor Identitas Karyawan
+            </td>
+            <td>
+                &emsp;
+                <input type="numeric" name="no-identitas" size="30">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Tempat/Tanggal Lahir
+            </td>
+            <td>
+                &emsp;
+                <input type="text" maxlength="50">
+                <label>/</label>
+                <input type="numeric" style="width: 4em;" maxlength="2">
+                <label>-</label>
+                <input type="numeric" style="width: 4em;" maxlength="2">
+                <label>-</label>
+                <input type="numeric" style="width: 8em;" maxlength="4">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Nama Ayah Kandung
+            </td>
+            <td>
+                &emsp;
+                <input type="text" name="name" size="50">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Nama Ibu Kandung
+            </td>
+            <td>
+                &emsp;
+                <input type="text" name="name" size="50">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Id Keluarga
+            </td>
+            <td>
+                &emsp;
+                <input type="numeric" name="id-keluarga" size="50">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Tanggal Keluar
+            </td>
+            <td>
+                &emsp;
+                <input type="numeric" style="width: 4em;" maxlength="2">
+                <label>-</label>
+                <input type="numeric" style="width: 4em;" maxlength="2">
+                <label>-</label>
+                <input type="numeric" style="width: 8em;" maxlength="4">
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Alasan Keluar
+            </td>
+            <td>
+                &emsp;
+                <textarea style="width: 60em; resize: none;" name="Alasan Keluar" id="form-alasan" rows="5"></textarea>
+            </td>
+            </label>
+        </li>
+        </tr>
+        <tr>
+        <td>
+        <li>
+            <label>
+                Status Pekerjaan
+            </td>
+            <td>
+                &emsp;
+                <select name="jenis-identitas" id="form-identitas" style="width: 6em;">
+                    <option disabled selected value></option>
+                    <option>Kontrak</option>
+                    <option>Tetap</option>
+                    <option>Proyek</option>
+                </select>
+            </td>
+            </label>
+        </li>
+        </tr>
+    </table>
+    </ul>
+    <br>
+    <input type="submit" value="Kirim">
+    <input type="reset" value="Reset">
+    </fieldset>
+    </form>
+    </body>
+</html>
